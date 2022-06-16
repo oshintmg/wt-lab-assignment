@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorting numbers in ascending and descending order</title>
+</head>
+<body>
+    <script>
+   const numbers = [1, 12, 5, 200, 0];
+numbers.sort(compareFunction);
+
+console.log("Ascending order");
+
+function compareFunction(a,b){
+ //1.<0    ... a comes first
+//2.0 ...nothing will be changed
+//3.>0 ... b comes first
+    return a-b;
+}
+console.log(numbers);
+
+console.log("Dscending order");
+
+function compareFunction(a,b){
+ //1.<0    ... a comes first
+//2.0 ...nothing will be changed
+//3.>0 ... b comes first
+    return b-a;
+}
+console.log(numbers);
+</script>
+</body>
+</html>
+
+
+
+
+
+
